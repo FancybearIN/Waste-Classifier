@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Classifier</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        img {
+            margin-top: 20px;
+            border: 5px solid #3498db;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Waste Classifier is Running...</h1>
+    <p>Click the button below to stop the classifier.</p>
+    <a href="{{ url_for('stop') }}"><button>Stop Classifier</button></a>
+    <br>
+    <br>
+    <img src="{{ url_for('video_feed') }}" alt="Waste Classifier Output">
+</body>
+</html>
