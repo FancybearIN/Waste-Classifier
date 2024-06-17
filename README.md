@@ -27,3 +27,5 @@ List any prerequisites or dependencies needed to run your project. For example:
 -cvzone~=1.6.1
 -Flask~=3.0.0
 
+
+# dev by Gurwinder Singh
